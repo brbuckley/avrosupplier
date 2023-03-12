@@ -1,0 +1,21 @@
+{
+  "namespace": "com.liquorstore.purchase",
+  "type": "record",
+  "name": "PurchaseOrder",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {
+      "name": "items", "type":{
+        "type": "array",
+        "items": {
+          "name": "OrderLine",
+          "type": "record",
+          "fields": [
+            {"name": "quantity", "type": "int"},
+            {"name": "id", "type": "string"}
+          ]
+        }
+      }
+    }
+  ]
+}

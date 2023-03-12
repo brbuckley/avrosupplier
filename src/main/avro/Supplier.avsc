@@ -1,0 +1,9 @@
+{
+  "namespace": "com.liquorstore.supplier",
+  "type": "record",
+  "name": "SupplierOrder",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "purchase_id", "type": "string"}
+  ]
+}
